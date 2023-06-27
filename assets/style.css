@@ -68,6 +68,36 @@ body {
     }
 }
 
+@keyframes spinner-3 {
+    from {
+    transform: rotate(360deg);
+    }
+    
+    70% {
+        width: 10px;
+        height: 100px;
+        border-radius: 0;
+    }
+    80% {
+        width: 10px;
+        height: 80px;
+        border-radius: 0;
+    }
+    90% {
+        background: #23395B;
+        height: 50px;
+        border-radius: 0;
+    }
+    100% {
+        
+    }
+    to {
+        background: #23395B;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     .container {
@@ -130,6 +160,12 @@ body {
         animation-fill-mode: backwards;
     }
     
+    .spinner-3 {
+        height: 100px;
+        width: 100px;
+        background: #161925;
+        animation: spinner-3 4s infinite;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -158,6 +194,7 @@ body {
     }
     .spinner-2 {
         width: 20%;
+        height: 20%;
         display: flex;
         justify-content: space-around;
         animation: spinner-2;
@@ -166,7 +203,43 @@ body {
     .spinner-2 .circle {
         width: 1.5em;
         height: 1.5em;
-        border: 1px solid #000;
         border-radius: 50%;
+    }
+    
+    .spinner-2 .circle {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+    }
+
+    .c1 {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        animation: circle-1 4s 4s infinite;
+        animation-fill-mode: backwards;
+    }
+
+    .c2 {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        animation: circle-2 4s 4s infinite;
+        animation-fill-mode: backwards;
+    }
+
+    .c3 {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        animation: circle-3 4s 4s infinite;
+        animation-fill-mode: backwards;
+    }
+
+    .spinner-3 {
+        height: 100px;
+        width: 100px;
+        background: #161925;
+        animation: spinner-3 4s infinite;
     }
 }
