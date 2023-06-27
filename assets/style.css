@@ -32,6 +32,43 @@ body {
         background: rgb(5, 5, 5);}
 }
 
+@keyframes circle-1 {
+    15% {
+        background: white;
+    }
+    30% {
+        background: green;
+    }
+    100% {
+        background: red;
+    }
+}
+
+@keyframes circle-2 {
+    10% {
+        background: red;
+    }
+    50% {
+        background: white;
+    }
+    100% {
+        background: green;
+    }
+}
+
+@keyframes circle-3 {
+    10% {
+        background: green;
+    }
+    50% {
+        background: red;
+    }
+    100% {
+        background: white;
+    }
+}
+
+
 @media only screen and (min-width: 768px) {
     .container {
         height: 100vh;
@@ -49,11 +86,48 @@ body {
         align-items: center;
         justify-content: center;
     }
+
     .spinner-1 {
         width: 200px;
         height: 20px;
         background: #000;
-        animation: spinner-1 3s 1s infinite;
+        animation: spinner-1 4s 1s infinite;
+    }
+
+    .spinner-2 {
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .spinner-2 .circle {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+    }
+
+    .c1 {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        animation: circle-1 4s 4s infinite;
+        animation-fill-mode: backwards;
+    }
+
+    .c2 {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        animation: circle-2 4s 4s infinite;
+        animation-fill-mode: backwards;
+    }
+
+    .c3 {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        animation: circle-3 4s 4s infinite;
+        animation-fill-mode: backwards;
     }
     
 }
@@ -81,5 +155,18 @@ body {
         background: #000;
         border: 1px solid #000;
         animation: spinner-1 3s 1s infinite;
+    }
+    .spinner-2 {
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        animation: spinner-2;
+    }
+
+    .spinner-2 .circle {
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid #000;
+        border-radius: 50%;
     }
 }
