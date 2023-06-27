@@ -2,6 +2,36 @@ body {
     margin: 0;
 }
 
+@keyframes spinner-1 {
+     
+     0% {
+        widht: 1%px;
+        background: rgb(226, 226, 226);
+    }
+     15% {
+        width: 15%;
+        background: rgb(182, 180, 180);
+    }
+     25% {
+        width: 25%;
+        background: rgb(143, 140, 140);
+    }
+     50% {
+        width: 50%;
+        background: rgb(110, 109, 109);
+    }
+     75% {
+        width: 75%;
+        background: rgb(97, 96, 96);
+    }
+     95% {
+        width: 95%;
+        background: rgb(63, 62, 62);}
+     100% {
+        width: 100%; 
+        background: rgb(5, 5, 5);}
+}
+
 @media only screen and (min-width: 768px) {
     .container {
         height: 100vh;
@@ -19,13 +49,13 @@ body {
         align-items: center;
         justify-content: center;
     }
-    
-    /* .spinner-1 {
+    .spinner-1 {
         width: 200px;
         height: 20px;
         background: #000;
-        border: 1px solid #000;
-    } */
+        animation: spinner-1 3s 1s infinite;
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -45,10 +75,11 @@ body {
         align-items: center;
     }
     
-    /* .spinner-1 {
+    .spinner-1 {
         width: 200px;
         height: 20px;
         background: #000;
         border: 1px solid #000;
-    } */
+        animation: spinner-1 3s 1s infinite;
+    }
 }
