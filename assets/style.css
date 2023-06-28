@@ -380,5 +380,6 @@ body {
         height: 30px;
         border-radius: 50%;
         background: #000;
+        animation: spinner-6 2s infinite;
     }
 }
