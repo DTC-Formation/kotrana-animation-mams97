@@ -185,6 +185,18 @@ body {
     }
 } 
 
+@keyframes spinner-6 {
+    10% {background: transparent}
+    20% {background: #000;}
+    30% {background: transparent;}
+    40% {background: #000;}
+    50% {background: transparent;}
+    60% {background: #000;}
+    70% {background: transparent;}
+    80% {background: #000;}
+    90% {background: transparent;}
+}
+
 @media only screen and (min-width: 768px) {
     .container {
         height: 100vh;
@@ -260,6 +272,18 @@ body {
         background: rgb(251,63,247);
         background: radial-gradient(circle, rgba(251,63,247,0.5522408792618609) 0%, rgb(253, 253, 255) 100%);
         animation: spinner-4 1s infinite;
+    }
+
+    .spinner-5 {
+        animation: spinner-5 4s infinite;
+    }
+
+    .spinner-6 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #000;
+        animation: spinner-6 2s infinite;
     }
 }
 
@@ -349,5 +373,12 @@ body {
 
     .spinner-5 {
         animation: spinner-5 4s infinite;
+    }
+
+    .spinner-6 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #000;
     }
 }
