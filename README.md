@@ -1,3 +1,3 @@
 # Practice animation
-360568
-5B2A86
+
+6 examples for loader 
