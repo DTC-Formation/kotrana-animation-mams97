@@ -328,6 +328,35 @@ body {
         animation: spinner-7 2s infinite;
     }
 
+    .spinner-8 {
+        animation: spinner-8 1s infinite;
+    }
+
+    .spinner-8 .rect-1, .rect-4 {
+        height: 100px;
+        width: 10px;
+        background: #000;
+    }
+
+    .spinner-8 .rect-2, .rect-3 {
+        height: 10px;
+        width: 100px;
+        background: #000;
+    }
+
+    .rect-2 {
+        position: relative;
+        bottom: 100px;
+        left: 10px;
+    }
+
+    .rect-4 {
+        position: relative;
+        left: 100px;
+        bottom: 100px;
+        animation: alternate 1s infinite;
+    }
+
     .spinner-9 {
         width: 100px;
         height: 100px;
@@ -462,9 +491,9 @@ body {
     .spinner-9 {
         width: 100px;
         height: 100px;
-        border: 1px dotted #000;
-        border-width: 1px 2px 3px 10px;
-        border-right: 1px solid #000;
+        border: dotted gray;
+        border-radius: 50%;
+        animation: spinner-9 500ms infinite;
     }
 
 }
