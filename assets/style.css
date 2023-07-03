@@ -253,6 +253,42 @@ body {
     }
 }
 
+@keyframes spinner-11 {
+    0% {
+        border-width: 0px 1px 10px 15px;
+    }
+    25% {
+        border-width: 15px 0px 1px 10px;
+    }
+    50% {
+        border-width: 10px 15px 0px 1px;
+    }
+    75% {
+        border-width: 1px 10px 15px 0px;
+    }
+    100% {
+        border-width: 0px 1px 10px 15px;
+    }
+}
+
+@keyframes spinner-11 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes spinner-12 {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .vh-50 {
         height: 50vh !important;
@@ -389,6 +425,41 @@ body {
         border-radius: 50%;
         animation: spinner-10 500ms infinite; 
     }
+
+    .spinner-11 {
+        width: 100px;
+        height: 100px;
+        border-top: solid gray;
+        border-width: 1px 10px;
+        border-radius: 50%;
+        animation: spinner-11 500ms infinite; 
+    }
+
+    .spinner-12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: spinner-12 1s infinite;
+    }
+
+    .spinner-12 .c-1 {
+        width: 100px;
+        height: 100px;
+        border: 3px solid #000;
+    }
+
+    .spinner-12 .c-2 {
+        width: 80px;
+        height: 80px;
+        border: 3px solid #000;
+    }
+
+    .spinner-12 .c-3 {
+        width: 100px;
+        height: 100px;
+        border: 3px solid #000;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -520,4 +591,45 @@ body {
         animation: spinner-9 500ms infinite;
     }
 
+    .spinner-10 {
+        width: 100px;
+        height: 100px;
+        border: solid gray;
+        border-radius: 50%;
+        animation: spinner-10 500ms infinite; 
+    }
+
+    .spinner-11 {
+        width: 100px;
+        height: 100px;
+        border-top: solid gray;
+        border-width: 1px 10px;
+        border-radius: 50%;
+        animation: spinner-11 500ms infinite; 
+    }
+
+    .spinner-12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: spinner-12 1s infinite;
+    }
+
+    .spinner-12 .c-1 {
+        width: 100px;
+        height: 100px;
+        border: 3px solid #000;
+    }
+
+    .spinner-12 .c-2 {
+        width: 80px;
+        height: 80px;
+        border: 3px solid #000;
+    }
+
+    .spinner-12 .c-3 {
+        width: 100px;
+        height: 100px;
+        border: 3px solid #000;
+    }
 }
