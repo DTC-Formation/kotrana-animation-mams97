@@ -1,3 +1,3 @@
 # Practice animation
 
-6 examples for loader 
+20 examples for loader in progressing  
