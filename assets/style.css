@@ -308,6 +308,7 @@ body {
     }
     50% {width: 100px;}
     to {
+        border-radius: 50%;
         transform: translateX(200px);
     }
 }
